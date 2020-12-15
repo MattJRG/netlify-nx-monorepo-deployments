@@ -17,11 +17,11 @@ export const App = () => {
     <div className="app">
       <header className="flex">
         <Logo width="75" height="75" />
-        <h1>Welcome to bike-store!</h1>
+        <h1>Welcome to bike-store, hope you like it!!</h1>
       </header>
       <main>
         <h2>Resources &amp; Tools</h2>
-        <p>Thank you for using and showing some ♥ for Nx.</p>
+        <p>Isn't this great!? Thank you for using and showing some ♥ for Nx.</p>
         <div className="flex github-star-container">
           <a
             href="https://github.com/nrwl/nx"
