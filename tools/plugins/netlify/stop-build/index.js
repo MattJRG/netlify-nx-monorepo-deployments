@@ -8,6 +8,7 @@ module.exports = {
       lastDeployedCommit,
       latestCommit
     );
+    console.log('Current project: ', currentProject);
     console.log('Last Deployment Commit: ', lastDeployedCommit);
     if (!projectHasChanged) {
       utils.build.cancelBuild(
@@ -24,9 +25,5 @@ function projectChanged(currentProject, fromHash, toHash) {
   //get the list of changed projects from the output
   const changedProjects = JSON.parse(output).projects;
   console.log('Log of changed projects: ', changedProjects);
-  if (changedProjects.find((project) => project === currentProject)) {
-    return true;
-  } else {
-    return false;
-  }
+  return !!changedProjects.find((project) => project === currentProject);
 }
