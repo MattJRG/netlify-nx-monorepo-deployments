@@ -1,5 +1,5 @@
 module.exports = {
-  onInit: ({ utils }) => {
+  onPreBuild: ({ utils }) => {
     const currentProject = process.env.PROJECT_NAME;
     const lastDeployedCommit = process.env.CACHED_COMMIT_REF;
     const latestCommit = 'HEAD';
@@ -13,7 +13,7 @@ module.exports = {
         `Build was cancelled because ${currentProject} was not affected by the latest changes`
       );
     }
-  }
+  },
 };
 
 function projectChanged(currentProject, fromHash, toHash) {
@@ -22,7 +22,7 @@ function projectChanged(currentProject, fromHash, toHash) {
   const output = execSync(getAffected).toString();
   //get the list of changed projects from the output
   const changedProjects = JSON.parse(output).projects;
-  if (changedProjects.find(project => project === currentProject)) {
+  if (changedProjects.find((project) => project === currentProject)) {
     return true;
   } else {
     return false;
