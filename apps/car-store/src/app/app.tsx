@@ -22,6 +22,7 @@ export const App = () => {
       <main>
         <h2>Resources &amp; Tools</h2>
         <p>Thank you for using and showing some ♥ for Nx. Hope to see you again soon!</p>
+        <p>The best test we could ask for!</p>
         <div className="flex github-star-container">
           <a
             href="https://github.com/nrwl/nx"
@@ -29,7 +30,7 @@ export const App = () => {
             rel="noopener noreferrer"
           >
             {' '}
-            If you like Nx, please give it a star:
+            If you like Nx, please give it a star!!:
             <div className="github-star-badge">
               <img src={star} className="material-icons" alt="" />
               Star

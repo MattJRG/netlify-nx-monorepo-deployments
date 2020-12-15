@@ -18,6 +18,7 @@ export const App = () => {
       <header className="flex">
         <Logo width="75" height="75" />
         <h1>Welcome to bike-store, we also do lots of cool skateboards too!</h1>
+        <p>This is such a great test</p>
       </header>
       <main>
         <h2>Resources &amp; Tools</h2>
