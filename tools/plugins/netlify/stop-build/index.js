@@ -8,6 +8,7 @@ module.exports = {
       lastDeployedCommit,
       latestCommit
     );
+    console.log('Last Deployment Commit: ', lastDeployedCommit);
     if (!projectHasChanged) {
       utils.build.cancelBuild(
         `Build was cancelled because ${currentProject} was not affected by the latest changes`
