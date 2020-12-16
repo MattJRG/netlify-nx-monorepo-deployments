@@ -26,6 +26,8 @@ export const App = () => {
           soon!
         </p>
         <p>The best test we could ask for!</p>
+        <h4>What are we going to test next?</h4>
+        <p>Extra line</p>
         <div className="flex github-star-container">
           <a
             href="https://github.com/nrwl/nx"
