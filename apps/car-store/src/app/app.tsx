@@ -21,9 +21,12 @@ export const App = () => {
       </header>
       <main>
         <h2>Resources &amp; Tools</h2>
-        <p>Thank you for using and showing some ♥ for Nx. Hope to see you again soon!</p>
+        <p>
+          Thank you for using and showing some ♥ for Nx. Hope to see you again
+          soon!
+        </p>
         <p>The best test we could ask for!</p>
-        <p>What are we going to test next?</p>
+        <h4>What are we going to test next?</h4>
         <div className="flex github-star-container">
           <a
             href="https://github.com/nrwl/nx"
