@@ -22,9 +22,6 @@ export const App = () => {
       <main>
         <h2>Resources &amp; Tools</h2>
         <p>Isn't this great!? Thank you for using and showing some ♥ for Nx.</p>
-        <span>Does this work too?</span>
-        <h3>We're still working on this section for now... and we hope to release a new update soon</h3>
-        <button>Test me!</button>
         <div className="flex github-star-container">
           <a
             href="https://github.com/nrwl/nx"
